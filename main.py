@@ -17,7 +17,7 @@ while menuOption != '6':
     #print(menuOption)
     if menuOption == '1':
         print("Add item")
-        item = input("What item would you like to add:  ")
+        item = input("What item would you like to add: ")
         mylist.append(item)
     
     elif menuOption == '2':
