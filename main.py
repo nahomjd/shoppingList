@@ -1,7 +1,7 @@
 menuOption = None
 
 mylist = []
-mylistTest = ['corn','banana','flour','apple','vitimans','gaterade']
+
 menuText = '''
 1.) Add item 
 2.) Print list
@@ -15,6 +15,7 @@ while menuOption != '6':
     print(menuText)
     menuOption = input("Enter selection: ")
     #print(menuOption)
+    
     if menuOption == '1':
         print("Add item")
         item = input("What item would you like to add: ")
@@ -35,7 +36,7 @@ while menuOption != '6':
         try:
             number = int(number)
             myListTemp = []
-            removedItem = mylistmylist[number-1]
+            removedItem = mylist[number-1]
             for item in mylist:
                 if item != removedItem:
                     myListTemp.append(item)
