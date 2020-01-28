@@ -16,7 +16,9 @@ while menuOption != '6':
     menuOption = input("Enter selection: ")
     #print(menuOption)
     if menuOption == '1':
-        print('Add item')
+        print("Add item")
+        item = input("What item would you like to add:  ")
+        mylist.append(item)
     
     elif menuOption == '2':
         print('Print list')
@@ -40,7 +42,6 @@ while menuOption != '6':
             mylist = myListTemp
         except Exception as e:
             print('Not a valid input' + str(e))
-        print(mylist)
     
     elif menuOption == '4':
         print('Saved list to file')
